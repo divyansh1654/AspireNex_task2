@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuizMaker</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-default" style="background-color: rgb(100, 4, 112); color: rgb(255, 255, 255);" >
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Quizzz....</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse" >
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="https://6687d6fd4250ed3e4b58716c--endearing-otter-324e95.netlify.app">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <div class="row row-divider"><h1 class="col-md-3">Quizzz......<small style="color: aqua;">||Divyansh||</small></h1><h1 class="col-md-9"> |   &nbsp;&nbsp; Make your own quizzz...</h1></div>
+    <div class="row"><h1></h1></div>
+    <div class="row row-divider">
+
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div id="question-status"></div>
+        <form class="form-inline">
+          <h2 id="current-question-title">Question 1</h2> <!-- Change this when moving to next question (#question-title)-->
+          <div>
+            <table class="table borderless">
+              <tbody>
+              </tbody>
+
+              <!-- Last row of the table for option -->
+              <tbody id="quiz-control">
+                <tr>
+                  <td>
+                    <button type="button" class="btn btn-primary btn-lg"> Add Option </button>
+                  </td>
+                  <td class="text-right">
+                    <button type="button" class="btn btn-warning btn-lg"> Add Question </button>
+                    <button type="button" class="btn btn-success btn-lg"> Start Quiz! </button>
+                  </td>
+                </tr>
+              </tbody>
+              <div id="time-setting">
+                <label for="quiz-time">Set quiz duration (minutes): </label>
+                <input style="color: black;" type="number" id="quiz-time" min="1" max="60" value="5"> <!-- Default value is 5 minutes -->
+                <button type="button" id="setTimeButton" class="btn btn-primary">Set Time</button>
+              </div>
+            </table>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="create.js"></script>
+
+</body>
+</html>

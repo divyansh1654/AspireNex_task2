@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QuizMaker</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Quizzz...</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="https://6687d6fd4250ed3e4b58716c--endearing-otter-324e95.netlify.app">Contact</a></li>
+     
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<div class="container">
+  <div class="row row-divider"><h1 class="col-md-3">Quizzzz.... <small style="color: aqua;">||Divyansh||</small></h1><h1 class="col-md-9"> |   &nbsp;&nbsp; Play</h1></div>
+  <div class="row"><h1></h1></div>
+  <div class="row row-divider">
+
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <div id="question-status"></div>
+      <form class="form-inline">
+        <h2 id="current-question-title">Question 1</h2> <!-- Change this when moving to next question (#question-title)-->
+        <div>
+          <table class="table borderless">
+            <tbody>
+            </tbody>
+
+            <!-- Last row of the table for option -->
+            <tbody id="quiz-control">
+            <tr>
+              <td class="text-right" colspan="2">
+                <button type="button" class="btn btn-primary btn-lg"> Next </button>
+                <button type="button" class="btn btn-success btn-lg"> Finish! </button>
+                <button type="button" class="btn btn-success btn-lg" id="reset"> Reset </button>
+
+              </td>
+            </tr>
+            </tbody>
+
+          </table>
+        </div>
+      </form>
+      <div id="timer">
+        Time remaining: <span id="countdown"></span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="js/play.js"></script>
+<script src="js/timer.js"></script>
+
+</body>
+</html>

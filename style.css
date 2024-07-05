@@ -1,0 +1,53 @@
+/* Remove borders for table cells */
+.borderless tbody tr td,
+.borderless tbody tr th,
+.borderless thead tr th {
+  border: none;
+}
+
+body{
+  background-color: rgb(21, 24, 86);
+  background-image: url('/3d-rendering-questions-background_23-2151455632.jpg'); 
+  color: aliceblue;
+  background-size: cover; /* Cover entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* No repeating */
+  /* Optional: Add background color as fallback */
+  background-color: #f0f0f0; /* Light gray background color */
+}
+
+/* Add a subtle divider between rows */
+.row-divider {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style text inputs */
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style radio buttons */
+input[type="radio"] {
+  margin-top: -3px;
+  vertical-align: middle;
+}
+
+/* Larger font size for specific text */
+.text-lg {
+  font-size: 19px;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  input[type="text"],
+  input[type="radio"] {
+    width: 100%;
+    max-width: none;
+  }
+}
